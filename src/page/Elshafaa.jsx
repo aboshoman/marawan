@@ -2,225 +2,215 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Elshafaa() {
+  const products = [
+    {
+      image: "src/assets/imgs/imgs/imgs21.jpg",
+      category: "ميزان حرارة",
+      name: "Object thermometer",
+      star: 4.95,
+      reveiw: 73,
+      price: 175,
+    },
+    {
+      image: "src/assets/imgs/imgs/imgs28.jpg",
+      category: "ميزان حرارة",
+      name: "Non-Contact thermometer",
+      star: 4.8,
+      reveiw: 56,
+      price: 295,
+    },
+    {
+      image: "src/assets/imgs/imgs/imgs47.jpg",
+      category: "ميزان حرارة",
+      name: "LCD Thermometer",
+      star: 4.4,
+      reveiw: 27,
+      price: 325,
+    },
+    {
+      image: "src/assets/imgs/imgs/imgs46.jpg",
+      category: "ميزان حرارة",
+      name: "Non-touch thermometer",
+      star: 4.15,
+      reveiw: 98,
+      price: 350,
+    },
+  ];
+
   return (
     <>
-      <section class="banner bg-gray-200 py-8">
-        <div class="container mx-auto text-center">
-          <div class="bantxt mb-4">
-            <span class="text-lg font-bold">كمامات امنة</span>
-            <span class="text-lg font-bold text-blue-500">خصم يصل الي 15%</span>
-            <br />
-            <span>احصل علي افضل كمامات امنة لحمياتك و حماية عائلتك</span>
-          </div>
-          <a
-            href="./product.html"
-            class="btn bg-blue-500 text-white px-8 py-2 rounded-full"
+      <section className="bg-[url('src/assets/imgs/banner.png')] h-[90vh] bg-no-repeat bg-contain flex items-center">
+        <div dir="rtl" className=" w-[600px] text-center ">
+          <h2 className="text-2xl  font-bold mb-6">كمامات امنة</h2>
+          <h4 className="text-4xl font-bold text-white mb-10">
+            خصم يصل الي <span className="text-black text-6xl"> %15 </span>
+          </h4>
+          <p className="text-lg mb-10">
+            احصل علي افضل كمامات امنة لحمياتك و حماية عائلتك
+          </p>
+
+          <Link
+            to={"/product"}
+            className=" bg-white rounded-md py-3.5 px-8 text-sm font-semibold hover:bg-sky-500 hover:text-cyan-50 transition-all"
           >
             تصفح باقي العروض
-          </a>
+          </Link>
         </div>
       </section>
 
-      <section class="sec_3 py-8" id="sec_3">
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div dir={"rtl"} class="card bg-gray-100 p-4">
-              <h5 class="text-lg font-bold mb-2">20% وفّر</h5>
-              <p class="mb-4">
-                <span class="text-white text-lg">معقم يد</span>
+      <section className="sec_3 py-8" id="sec_3">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="card bg-gray-100 p-4 bg-[url('src/assets/imgs/imgs/imgs02.jpg')] bg-center h-80 w-[34rem] rounded-lg ">
+              <h5 className="text-lg font-bold mb-2 mt-[4rem]">20% وفّر</h5>
+              <p className="mb-4">
+                <span className="text-white text-lg">معقم يد</span>
                 <br />
-                <span class="text-lg font-semibold">
+                <span className="text-lg font-semibold">
                   99.9% حماية من البكتريا
                 </span>
               </p>
-              <button class="btn bg-blue-500 text-white px-4 py-2 rounded-full">
+              <Link
+                to={"/payment"}
+                className="btn bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-sky-300 hover:text-white transition-all"
+              >
                 اشتري الان
-              </button>
+              </Link>
             </div>
-            <div class="card bg-gray-100 p-4">
-              <h5 class="text-lg font-bold mb-2">15% خصم</h5>
-              <p class="mb-4">
-                <span class="text-blue-500 text-lg">مستلزمات واقية</span>
+            <div
+              dir="rtl"
+              className="card bg-gray-100 bg-[url('src/assets/imgs/imgs/imgs03.jpg')] p-4 bg-center h-80 w-[34rem] rounded-lg "
+            >
+              <h5 className="text-lg font-bold mb-2 mt-[4rem]">15% خصم</h5>
+              <p className="mb-4">
+                <span className="text-blue-500 text-lg">مستلزمات واقية</span>
                 <br />
-                <span class="text-lg font-semibold">
+                <span className="text-lg font-semibold">
                   99.9% حماية من البكتريا
                 </span>
               </p>
-              <button class="btn bg-blue-500 text-white px-4 py-2 rounded-full">
+              <Link
+                to={"/payment"}
+                className="btn bg-blue-500 text-white transition-all px-4 py-2 rounded-full hover:bg-sky-300 hover:text-white"
+              >
                 اشتري الان
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      <section class="sec_5" id="sec_5">
-        <p class="sptext">اكثر المنتجات مبيعاً</p>
-        <div class="container mx-auto">
-          <div class="flex flex-wrap justify-center">
+      <section className="sec_5" id="sec_5">
+        <p className="sptext text-center bg-[url('src/assets/imgs/imgs/imgs04.png')] bg-center bg-no-repeat p-10 text-xl font-bold">
+          اكثر المنتجات مبيعاً
+        </p>
+        <div className="container mx-auto">
+          <div className="flex flex-wrap justify-center">
             {/* <!--  --> */}
-            <div class="w-72 m-4">
-              <div class="card text-center">
-                <img
-                  src="./assist/imgs/imgs/imgs21.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="text-gray-500">أجهزة, ميزان حرارة</div>
-                <h6 class="card-title">Object thermometer</h6>
-                {/* <!-- STAR RATING  --> */}
-                <div>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
+            {products.map((product) => {
+              <div key={product.name} className="w-72 m-4 mb-10">
+                <div className="card text-center">
+                  <img
+                    src={product.image}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                  <div className="text-gray-500 ">{product.category}</div>
+                  <h6 className="card-title">{product.name}</h6>
+                  {/* <!-- STAR RATING  --> */}
+                  <div className="flex items-center justify-center">
+                    <svg
+                      className="w-4 h-4 text-yellow-300 me-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 22 20"
+                    >
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"></path>
+                    </svg>
+                    <p className="ms-2 text-sm font-bold text-gray-900 dark:text-slate-600">
+                    {product.star}
+                    </p>
+                    <span className="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
+                    <a className="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-slate-600">
+                    {product.reveiw} reviews
+                    </a>
+                  </div>
+                  <h3 className="price mb-3 text-sky-700">{product.price} L.E</h3>
+                  <Link
+                    to={"/payment"}
+                    className="btn btn-primary bg-blue-500 px-24 py-2 rounded-lg hover:bg-blue-600 text-white "
+                  >
+                    اشتري الان
+                  </Link>
                 </div>
-                <h3 class="price">175 L.E</h3>
-                <a href="./payment_page.html" class="btn btn-primary">
-                  اشتري الان
-                </a>
-              </div>
-            </div>
-
-            {/* <!--  --> */}
-            <div class="w-72 m-4">
-              <div class="card text-center">
-                <img
-                  src="./assist/imgs/imgs/imgs28.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="text-gray-500">أجهزة, ميزان حرارة</div>
-                <h6 class="card-title">Non-Contact thermometer</h6>
-                {/* <!-- STAR RATING  --> */}
-                <div>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                </div>
-                <h3 class="price">295 L.E</h3>
-                <a href="./payment_page.html" class="btn btn-primary">
-                  اشتري الان
-                </a>
-              </div>
-            </div>
-            {/* <!--  --> */}
-            <div class="w-72 m-4">
-              <div class="card text-center">
-                <img
-                  src="./assist/imgs/imgs/imgs47.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="text-gray-500">أجهزة, ميزان حرارة</div>
-                <h6 class="card-title">LCD Thermometer</h6>
-                {/* <!-- STAR RATING  --> */}
-                <div>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                </div>
-                <h3 class="price">325 L.E</h3>
-                <a href="./payment_page.html" class="btn btn-primary">
-                  اشتري الان
-                </a>
-              </div>
-            </div>
-            {/* <!--  --> */}
-            <div class="w-72 m-4">
-              <div class="card text-center">
-                <img
-                  src="./assist/imgs/imgs/imgs46.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="text-gray-500">أجهزة, ميزان حرارة</div>
-                <h6 class="card-title">Non-touch thermometer</h6>
-                {/* <!-- STAR RATING  --> */}
-                <div>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                  <i class="fa fa-star star"></i>
-                </div>
-                <h3 class="price">350 L.E</h3>
-                <a href="./payment_Page.html" class="btn btn-primary">
-                  اشتري الان
-                </a>
-              </div>
-            </div>
-            {/* <!--  --> */}
+              </div>;
+            })}
           </div>
         </div>
       </section>
 
-      <section class="sec_6" id="sec_6">
-        <div class="bg-gray-100 py-20">
-          <div class="container mx-auto">
-            <div class="text-center mb-10">
-              <h2 class="text-3xl font-semibold">بعض آراء عملائنا</h2>
+      <section className="sec_6" id="sec_6">
+        <div className="bg-gray-100 py-20">
+          <div className="container mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-semibold">بعض آراء عملائنا</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* <!-- Testimonial 1 --> */}
-              <div class="bg-white rounded-lg shadow-md p-6">
-                <p class="text-gray-700 mb-4">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <p className="text-gray-700 mb-4">
                   الصيدلية دي مكنتش مجرد مكان أشتري منه الدواء، بس كانت تجربة.
                   الأجواء هناك كانت مريحة والخدمة كانت ممتازة. الموظفين كانوا
                   متفهمين لاحتياجاتي وعطوني الوقت والاهتمام اللي كنت محتاجه. مش
                   هسيب الصيدلية دي لأي سبب
                 </p>
-                <div class="flex items-center">
+                <div className="flex items-center">
                   <img
-                    src="./assist/imgs/imgs/imgs51.jpg"
-                    class="w-12 h-12 rounded-full mr-4"
+                    src="src/assets/imgs/imgs/imgs51.jpg"
+                    className="w-12 h-12 rounded-full mr-4"
                     alt="محمد مصطفي"
                   />
                   <div>
-                    <h5 class="font-bold">محمد مصطفي</h5>
-                    <p class="text-gray-500 text-sm">ممرض في القصر العيني</p>
+                    <h5 className="font-bold">محمد مصطفي</h5>
+                    <p className="text-gray-500 text-sm">ممرض في القصر العيني</p>
                   </div>
                 </div>
               </div>
               {/* <!-- Testimonial 2 --> */}
-              <div class="bg-white rounded-lg shadow-md p-6">
-                <p class="text-gray-700 mb-4">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <p className="text-gray-700 mb-4">
                   كل مرة بزور الصيدلية دي بتكون تجربة مختلفة ومميزة. الناس فيها
                   مش بس بيعرفوا يرشحولك الدواء اللي محتاجه، لأ دا بيهتموا بيك
                   بشكل شخصي و بيدوك نصائح وتوجيهات مفيدة. دايما برجع ليهم بثقة
                 </p>
-                <div class="flex items-center">
+                <div className="flex items-center">
                   <img
-                    src="./assist/imgs/imgs/719d480c-4097-468c-91d0-792e058ec630.png"
-                    class="w-12 h-12 rounded-full mr-4"
+                    src="src/assets/imgs/imgs/719d480c-4097-468c-91d0-792e058ec630.png"
+                    className="w-12 h-12 rounded-full mr-4"
                     alt="احمد عادل"
                   />
                   <div>
-                    <h5 class="font-bold">احمد عادل</h5>
-                    <p class="text-gray-500 text-sm">دكتور صيدلي</p>
+                    <h5 className="font-bold">احمد عادل</h5>
+                    <p className="text-gray-500 text-sm">دكتور صيدلي</p>
                   </div>
                 </div>
               </div>
               {/* <!-- Testimonial 3 --> */}
-              <div class="bg-white rounded-lg shadow-md p-6">
-                <p class="text-gray-700 mb-4">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <p className="text-gray-700 mb-4">
                   الخدمة في الصيدلية دي مش بس كانت حلوة ،دا الموظفين متعاونين
                   وبيقدموا خدمة ممتازة بكل معنى الكلمة. اشتريت الدواء اللي
                   عاوزاه بسهولة وسرعة، وحسيت اني في مكان آمن وموثوق
                 </p>
-                <div class="flex items-center">
+                <div className="flex items-center">
                   <img
-                    src="./assist/imgs/imgs/f2a2726c-ed18-4d87-b37d-e2d84c80b431.png"
-                    class="w-12 h-12 rounded-full mr-4"
+                    src="src/assets/imgs/imgs/f2a2726c-ed18-4d87-b37d-e2d84c80b431.png"
+                    className="w-12 h-12 rounded-full mr-4"
                     alt="مريم رضا"
                   />
                   <div>
-                    <h5 class="font-bold">مريم رضا</h5>
-                    <p class="text-gray-500 text-sm">دكتورة علاج طبيعي</p>
+                    <h5 className="font-bold">مريم رضا</h5>
+                    <p className="text-gray-500 text-sm">دكتورة علاج طبيعي</p>
                   </div>
                 </div>
               </div>
@@ -228,52 +218,55 @@ function Elshafaa() {
           </div>
         </div>
       </section>
-      <section class="sec_7" id="sec_7">
-        <p class="sptext">آخر الأخبار</p>
-        <div class="container mx-auto text-center">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* <!-- News Card --> */}
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <img
-                src="./assist/imgs/imgs/imgs52.jpg"
-                class="w-full h-48 object-cover rounded-md mb-4"
-                alt="النفايات المعدية بالمستشفيات"
-              />
-              <h6 class="text-xl font-semibold mb-2">
-                النفايات المعدية بالمستشفيات
-              </h6>
-              <p class="text-gray-700 mb-4 text-left">
+      <section className="sec_7" id="sec_7">
+        <p className="text-center bg-[url('src/assets/imgs/imgs/imgs04.png')] bg-center bg-no-repeat p-10 text-xl font-bold">
+          آخر الأخبار
+        </p>
+        <div className="  justify-center grid grid-cols-3 sm:grid-cols-3 gap-5 ml-[3%]">
+          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              src="src/assets/imgs/imgs/imgs52.jpg"
+              className="w-full"
+              alt="..."
+            />
+            <div className="px-6 py-4">
+              <h6 className="font-bold text-xl mb-2">المقصات الجراحية</h6>
+              <p className="text-gray-700 text-base">
                 تحتوي مخلفات الرعاية الصحية على كائنات مجهرية قد تكون مضرّة
                 ويمكنها نقل العدوى إلى المرضى في المستشفيات والعاملين الصحيين
                 وعامة الناس. تشمل المخاطر المحتملة الأخرى انتشار كائنات مجهرية
-                مقاومة للأدوية من مرافق الرعاية الصحية إلى البيئة. وتشمل أيضاً
-                المخاطر الصحية ذات الصلة بالمخلفات والمنتجات الثانوية ما يلي:
-                الإصابات الناجمة عن وخز الأدوات الحادة؛ التسمم والتلوث عن طريق
-                مفعول المستحضرات الدوائية ، وخصوصاً المضادات الحيوية والعقاقير
-                السامة للخلايا؛ التسمم والتلوث عن طريق مياه الصرف؛ وبعناصر أو
-                مركبات مثل الزئبق
+                مقاومة للأدوية من مرافق الرعاية الصحية إلى البيئة. وتشمل أيضاً ؛
+                التسمم والتلوث عن طريق مياه الصرف؛ وبعناصر أو مركبات مثل الزئبق
               </p>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                  <i class="fa fa-tag text-blue-500 mr-2"></i>
-                  <a href="#" class="text-blue-500">
-                    blog , Youtube
-                  </a>
-                </div>
-                <a href="#" class="btn btn-primary">
-                  إقرأ المزيد <i class="fa fa-arrow-circle-right ml-2"></i>
-                </a>
-              </div>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                #blog
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+                #Youtube
+              </span>
+            </div>
+            <div className="px-6 py-4">
+              {/* <a
+                href="#"
+                className="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
+              >
+                إقرأ المزيد{" "}
+                <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
+              </a> */}
             </div>
           </div>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* <!-- Card 1 --> */}
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
-            <img src="./assist/imgs/imgs/imgs53.jpg" class="w-full" alt="..." />
-            <div class="px-6 py-4">
-              <h6 class="font-bold text-xl mb-2">المقصات الجراحية</h6>
-              <p class="text-gray-700 text-base">
+          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              src="src/assets/imgs/imgs/imgs53.jpg"
+              className="w-full"
+              alt="..."
+            />
+            <div className="px-6 py-4">
+              <h6 className="font-bold text-xl mb-2">المقصات الجراحية</h6>
+              <p className="text-gray-700 text-base">
                 ، وتعرف كذلك باسم «الملقط» في بعض الدول خارج الولايات المتحدة،
                 هي عبارة عن أدوات جراحية تستخدم في القطع. وتشمل مقصات الضمادات،
                 ومقصات التشريح، ومقصات القزحية، ومقصات العمليات، ومقصات الغرز،
@@ -281,57 +274,85 @@ function Elshafaa() {
                 ومقصات مايو. تصنع المقصات الجراحية عادة من الفولاذ المقاوم
               </p>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                 #blog
               </span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
                 #Youtube
               </span>
             </div>
-            <div class="px-6 py-4">
-              <a
+            <div className="px-6 py-4">
+              {/* <a
                 href="#"
-                class="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
+                className="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
               >
                 إقرأ المزيد{" "}
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-              </a>
+                <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
+              </a> */}
             </div>
           </div>
 
           {/* <!-- Card 2 --> */}
-          <div class="max-w-sm rounded overflow-hidden shadow-lg">
-            <img src="./assist/imgs/imgs/imgs54.jpg" class="w-full" alt="..." />
-            <div class="px-6 py-4">
-              <h6 class="font-bold text-xl mb-2">جهاز ضغط الدم</h6>
-              <p class="text-gray-700 text-base">
+          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              src="src/assets/imgs/imgs/imgs54.jpg"
+              className="w-full"
+              alt="..."
+            />
+            <div className="px-6 py-4">
+              <h6 className="font-bold text-xl mb-2">جهاز ضغط الدم</h6>
+              <p className="text-gray-700 text-base">
                 ، يوضع السوار بشكل سلس ومريح حول الذراع، على نفس الارتفاع الرأسي
                 للقلب بشكل تقريبي، في حين أن الشخص يجلس وذراعه مسترخية ومدعومة.
                 المواقع أخرى لوضع السوار تعتمد على الأنواع، ويمكن أن تشمل
                 اللسان، الزعنفة، الذيل
               </p>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                 #Care
               </span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
                 #Youtube
               </span>
             </div>
-            <div class="px-6 py-4">
-              <a
+            <div className="px-6 py-4">
+              {/* <a
                 href="#"
-                class="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
+                className="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
               >
                 إقرأ المزيد{" "}
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-              </a>
+                <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
+              </a> */}
             </div>
           </div>
         </div>
       </section>
+      <div className="w-full flex justify-center items-center h-[80vh] bg-gradient-to-tl bg-sky-200 text-center">
+        <form action="#">
+          <fieldset>
+            <p className="mb-7 text-3xl font-bold bg-[url('src/assets/imgs/imgs/imgs04.png')] bg-center bg-no-repeat p-7 ">
+              سجل الآن كي تصلك آخر الأخبار
+            </p>
+            <p className="mb-16 text-lg">
+              سجل الآن للحصول علي آخر العروض و التخفيضات
+            </p>
+            <input
+              type="email"
+              name=""
+              id=""
+              className="p-4 w-[35rem] text-lg"
+              required
+            />
+            <input
+              type="submit"
+              id=""
+              className="p-4 px-12 cursor-pointer bg-sky-400 hover:bg-sky-500 hover:text-sky-50"
+            />
+          </fieldset>
+        </form>
+      </div>
     </>
   );
 }

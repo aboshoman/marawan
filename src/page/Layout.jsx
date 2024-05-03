@@ -7,32 +7,19 @@ function Layout() {
     <div>
       <Navbar />
       <Outlet></Outlet>
-      <footer class="bg-gray-800">
+      <footer className="bg-gray-800">
         {/* <!-- navbar section --> */}
-        <div class="flex justify-between items-center px-4 py-2">
-          <div class="flex items-center">
-            <a href="tel:01114996232" class="text-white mr-4">
-              <i class="fas fa-phone"></i> (+20) 011 1499 62 32
+        <div className="flex justify-evenly items-center px-4 py-2">
+          <div className="flex items-center ">
+            <a href="tel:01114996232" className="text-white mr-7">
+              <i className="fas fa-phone"></i> (+20) 011 1499 62 32
             </a>
-            <a href="mailto:shefaamanger@gmail.com" class="text-white">
-              <i class="fas fa-envelope"></i> shefaa@gmail.com
-            </a>
-          </div>
-          {/* <!-- social icons  --> */}
-          <div class="flex items-center">
-            <a href="#" class="text-white mr-2">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#" class="text-white mr-2">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-white mr-2">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-white">
-              <i class="fab fa-google-plus-g"></i>
+        <p className="text-muted mb-0 py-2 text-slate-400">&copy; 2024 osimTeam All risghts reserved.</p>
+            <a href="mailto:shefaamanger@gmail.com" className="text-white">
+              <i className="fas fa-envelope mx-5"></i> shefaa@gmail.com
             </a>
           </div>
+
         </div>
       </footer>
     </div>

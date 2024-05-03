@@ -3,26 +3,37 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div>
-      <Link to={"/product"}>product</Link>
-        <nav className="bg-gray-900 w-full py-4">
-          <div className="flex justify-center items-center">
-            <div className="flex items-center">
-              <div className="logo w-40 mr-80">
-                <img className="w-full" src="src/assets/imgs/1.png" alt="" />
-              </div>
-              <div className="links ml-4 ">
-                <Link to={"/"} className="text-white ml-5">الصفحة الرئسية</Link>
-                <Link to={"/"} className="text-white ml-5">العروض</Link>
-                <Link to={"/"} className="text-white ml-5">الأخبار</Link>
-                <Link to={"/"} className="text-white ml-5">الأصناف</Link>
-                <Link to={"/"} className="text-white ml-5">تواصل معنا</Link>
-              </div>
-              {/* <!-- links section --> */}
-            </div>
-          </div>
-        </nav>
-    </div>
+    <nav className="bg-[#ffffff] w-full py-3">
+      <div className="flex justify-between">
+        <div className="logo w-40 ms-20">
+          <img
+            className="w-full cursor-pointer"
+            src="src/assets/imgs/1.png"
+            alt=""
+          />
+        </div>
+        <div className="ml-4 me-20">
+          <Link
+            to={"/"}
+            className="font-bold  text-lg ml-5 hover:text-sky-400 transition-all"
+          >
+            الصفحة الرئسية
+          </Link>
+          <Link
+            to={"/product"}
+            className="font-bold text-lg ml-5 hover:text-sky-400 transition-all"
+          >
+            الأدوية
+          </Link>
+          <Link
+            to={"/payment"}
+            className="font-bold text-lg ml-5 hover:text-sky-400 transition-all"
+          >
+            payment
+          </Link>
+        </div>
+      </div>
+    </nav>
   );
 }
 

@@ -4,6 +4,7 @@ import Layout from "./page/Layout";
 import Elshafaa from "./page/Elshafaa";
 import Product from "./page/Product";
 import NotFound from "./page/NotFound";
+import Payment from "./page/Payment";
 
 function App() {
   let routers = createBrowserRouter([
@@ -20,8 +21,12 @@ function App() {
           element: <Product />,
         },
         {
+          path: "payment",
+          element: <Payment />,
+        },
+        {
           path: "*",
-          element: <NotFound/>,
+          element: <NotFound />,
         },
       ],
     },
