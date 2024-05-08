@@ -239,7 +239,6 @@ function Elshafaa() {
               </a> */}
             </div>
           </div>
-
           {/* <!-- Card 3 --> */}
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img
