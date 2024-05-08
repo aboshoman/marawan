@@ -25,12 +25,6 @@ function Navbar() {
           >
             الأدوية
           </Link>
-          <Link
-            to={"/payment"}
-            className="font-bold text-lg ml-5 hover:text-sky-400 transition-all"
-          >
-            payment
-          </Link>
         </div>
       </div>
     </nav>
