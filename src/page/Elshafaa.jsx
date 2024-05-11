@@ -27,7 +27,6 @@ function Elshafaa() {
           </Link>
         </div>
       </section>
-
       <section className="py-8 px-16 grid grid-cols-1 md:grid-cols-2 gap-20">
         {/* card 1 */}
         <div className="bg-gray-900 p-4 bg-[url('src/assets/imgs/imgs/imgs02.jpg')] bg-center h-80 w-[34rem] rounded-lg ">
@@ -46,9 +45,8 @@ function Elshafaa() {
             اشتري الان
           </Link>
         </div>
-        {/* card 2 */}
         <div
-          className="card bg-gray-100 bg-[url('src/assets/imgs/imgs/imgs03.jpg')] p-4 bg-center h-80 w-[34rem] rounded-lg "
+          className="card bg-gray-100 bg-[url('src/assets/imgs/imgs/imgs03.jpg')] p-4 bg-center h-80 w-[34rem] rounded-lg"
           dir="rtl"
         >
           <h5 className="text-lg font-bold mb-2 mt-[4rem]">15% خصم</h5>
@@ -67,19 +65,16 @@ function Elshafaa() {
           </Link>
         </div>
       </section>
-
       <p className="text-center bg-[url('src/assets/imgs/imgs/imgs04.png')] bg-center bg-no-repeat p-10 text-xl font-bold">
         اكثر المنتجات مبيعاً
       </p>
       <div className="container mx-auto flex flex-wrap justify-center">
-        {/* <!--  --> */}
         {products.map((product) => (
           <div key={product.name} className="w-72 m-4 mb-10">
             <div className="card text-center">
               <img src={product.image} className="card-img-top" alt="..." />
               <div className="text-gray-500 ">{product.category}</div>
               <h6 className="card-title">{product.name}</h6>
-              {/* <!-- STAR RATING  --> */}
               <div className="flex items-center justify-center">
                 <svg
                   className="w-4 h-4 text-yellow-300 me-1"
@@ -110,11 +105,9 @@ function Elshafaa() {
           </div>
         ))}
       </div>
-
       <section className="bg-gray-100 py-20 text-center mb-10">
         <h2 className="text-3xl font-semibold py-8">بعض آراء عملائنا</h2>
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-          {/* <!-- Testimonial 1 --> */}
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700 mb-4">
               الصيدلية دي مكنتش مجرد مكان أشتري منه الدواء، بس كانت تجربة.
@@ -134,7 +127,6 @@ function Elshafaa() {
               </span>
             </span>
           </div>
-          {/* <!-- Testimonial 2 --> */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700 mb-4">
               كل مرة بزور الصيدلية دي بتكون تجربة مختلفة ومميزة. الناس فيها مش
@@ -153,7 +145,6 @@ function Elshafaa() {
               </span>
             </span>
           </div>
-          {/* <!-- Testimonial 3 --> */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <p className="text-gray-700 mb-4">
               الخدمة في الصيدلية دي مش بس كانت حلوة ،دا الموظفين متعاونين
@@ -174,108 +165,65 @@ function Elshafaa() {
           </div>
         </div>
       </section>
-
       <section className="sec_7">
         <p className="text-center bg-[url('src/assets/imgs/imgs/imgs04.png')] bg-center bg-no-repeat p-10 text-xl font-bold">
-          آخر الأخبار
+        نصائح طبية
         </p>
         <div className="  justify-center grid grid-cols-3 sm:grid-cols-3 gap-5 ml-[3%]">
-          {/* <!-- Card 1 --> */}
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
-              src="src/assets/imgs/imgs/imgs52.jpg"
-              className="w-full"
-              alt="..."
-            />
-            <span className="px-6 py-4">
-              <h6 className="font-bold text-xl mb-2">المقصات الجراحية</h6>
-              <p className="text-gray-700 text-base py-6" >
-                تحتوي مخلفات الرعاية الصحية على كائنات مجهرية قد تكون مضرّة
-                ويمكنها نقل العدوى إلى المرضى في المستشفيات والعاملين الصحيين
-                وعامة الناس. تشمل المخاطر المحتملة الأخرى انتشار كائنات مجهرية
-                مقاومة للأدوية من مرافق الرعاية الصحية إلى البيئة. وتشمل أيضاً ؛
-                التسمم والتلوث عن طريق مياه الصرف؛ وبعناصر أو مركبات مثل الزئبق
-              </p>
-            </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ">
-                #blog
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                #Youtube
-              </span>
-          </div>
-          {/* <!-- Card 2 --> */}
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
-              src="src/assets/imgs/imgs/imgs53.jpg"
-              className="w-full"
-              alt="..."
-            />
-            <div className="px-6 py-4">
-              <h6 className="font-bold text-xl mb-2">المقصات الجراحية</h6>
-              <p className="text-gray-700 text-base">
-                ، وتعرف كذلك باسم «الملقط» في بعض الدول خارج الولايات المتحدة،
-                هي عبارة عن أدوات جراحية تستخدم في القطع. وتشمل مقصات الضمادات،
-                ومقصات التشريح، ومقصات القزحية، ومقصات العمليات، ومقصات الغرز،
-                ومقصات قطع الأوتار، ومقصات ميتزينبوم، ومقصات جراحات التجميل،
-                ومقصات مايو. تصنع المقصات الجراحية عادة من الفولاذ المقاوم
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                #blog
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                #Youtube
-              </span>
-            </div>
-            <div className="px-6 py-4">
-              {/* <a
-                href="#"
-                className="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
-              >
-                إقرأ المزيد{" "}
-                <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
-              </a> */}
-            </div>
-          </div>
-          {/* <!-- Card 3 --> */}
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
-              src="src/assets/imgs/imgs/imgs54.jpg"
-              className="w-full"
-              alt="..."
-            />
-            <div className="px-6 py-4">
-              <h6 className="font-bold text-xl mb-2">جهاز ضغط الدم</h6>
-              <p className="text-gray-700 text-base">
-                ، يوضع السوار بشكل سلس ومريح حول الذراع، على نفس الارتفاع الرأسي
-                للقلب بشكل تقريبي، في حين أن الشخص يجلس وذراعه مسترخية ومدعومة.
-                المواقع أخرى لوضع السوار تعتمد على الأنواع، ويمكن أن تشمل
-                اللسان، الزعنفة، الذيل
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                #Care
-              </span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-                #Youtube
-              </span>
-            </div>
-            <div className="px-6 py-4">
-              {/* <a
-                href="#"
-                className="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
-              >
-                إقرأ المزيد{" "}
-                <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
-              </a> */}
-            </div>
-          </div>
+        <div className="max-w-sm rounded  text-center shadow-xl">
+          <img src="src/assets/imgs/imgs/nails.jpg" className="w-full" />
+          <span className="px-6 py-4">
+            <h6 className="font-bold text-xl mb-2">أسباب هشاشة الأظافر</h6>
+            <ul dir="rtl" className="text-right mr-10">
+              <li>الاستخدام الطويل والمتكرر للماء والصابون</li>
+              <li>الإفراط في استخدام طلاء الأظافر</li>
+              <li>استخدام مزيل الطلاء الحاوي على الأسيتون الخام %100</li>
+              <li>تقدّم العمر</li>
+              <li>سوء التغذية ونقص بعض الفيتامينات</li>
+              <li>الشره المرضي العصبي</li>
+              <li>نقص الحديد وفقر الدم</li>
+              <li>الإصابة بقصور الغدة الدرقية</li>
+              <li>الصدفية أو الإكزيما</li>
+            </ul>
+          </span>
+        </div>
+
+        <div className="max-w-sm rounded text-center shadow-xl">
+          <img src="src/assets/imgs/imgs/vitc.jpg" className="w-full" />
+          <span className="px-6 py-4">
+            <h6 className="font-bold text-xl mb-10">فوائد فيتامين سي Vit C</h6>
+            <ul dir="rtl" className="text-right mr-10">
+              <li>مهم في تصنيع الهرمونات والنواقل العصبية.</li>
+              <li>مهم لتصنيع الكولاجين .</li>
+              <li>التئام الجروح وشفائها.</li>
+              <li>تقوية المناعة.</li>
+              <li>تحسين امتصاص الحديد.</li>
+              <li>تقليل الكوليسترول.</li>
+              <li>يلعب دور في تكوين العظام.</li>
+              <li>يمنع تكوين الجذور الحرة التى تسبب تلف الخلايا.</li>
+            </ul>
+          </span>
+        </div>
+
+        <div className="max-w-sm rounded overflow-hidden text-center shadow-xl">
+          <img src="src/assets/imgs/imgs/reflux.jpg" className="w-full" />
+          <span className="px-6 py-4">
+            <h6 className="font-bold text-xl mb-2">أسباب الارتجاع المريئي</h6>
+            <ul dir="rtl" className="text-right mr-10">
+              <li>السمنة</li>
+              <li>التدخين والإفراط بشرب الكحول والقهوة.</li>
+              <li>تناول كميات كبيرة من الطعام.</li>
+              <li>
+                {" "}
+                الإكثار من المأكولات الحارة والحاوية كميات كبيرة من الدهون.
+              </li>
+              <li>الفتق الحجابي.</li>
+              <li>الحمل.</li>
+            </ul>
+          </span>
+        </div>
         </div>
       </section>
-      
       <div className="w-full flex justify-center items-center h-[80vh] bg-gradient-to-tl bg-sky-200 text-center">
         <form action="#">
           <fieldset>
@@ -287,14 +235,11 @@ function Elshafaa() {
             </p>
             <input
               type="email"
-              name=""
-              id=""
-              className="p-4 w-[35rem] text-lg"
+              className="text-lg pr-48 py-[12px] px-2 text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500  focus:outline-none"
               required
             />
             <input
               type="submit"
-              id=""
               className="p-4 px-12 cursor-pointer bg-sky-400 hover:bg-sky-500 hover:text-sky-50"
             />
           </fieldset>
@@ -303,5 +248,4 @@ function Elshafaa() {
     </>
   );
 }
-
 export default Elshafaa;

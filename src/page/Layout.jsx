@@ -8,7 +8,6 @@ function Layout() {
       <Navbar />
       <Outlet></Outlet>
       <footer className="bg-gray-800">
-        {/* <!-- navbar section --> */}
         <div className="flex justify-evenly items-center px-4 py-2">
           <div className="flex items-center ">
             <a href="tel:01114996232" className="text-white mr-7">

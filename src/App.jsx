@@ -5,6 +5,7 @@ import Elshafaa from "./page/Elshafaa";
 import Product from "./page/Product";
 import NotFound from "./page/NotFound";
 import Payment from "./page/Payment";
+import Advice from "./page/Advice";
 
 function App() {
   let routers = createBrowserRouter([
@@ -23,6 +24,10 @@ function App() {
         {
           path: "payment",
           element: <Payment />,
+        },
+        {
+          path: "advice",
+          element: <Advice />,
         },
         {
           path: "*",
